@@ -11,7 +11,8 @@ class App extends Component {
   constructor() {
     super()
     this.state = {
-      activeUser: 'Name 1'
+      activeUser: 'Name 1',
+      showCompleted: true
     }
 
     this.handleChange = this.handleChange.bind(this)
@@ -22,7 +23,7 @@ class App extends Component {
       {activeUser: event.target.value}
     )
   }
-  
+
   render() {
     return (
       <div className="mainApp">
