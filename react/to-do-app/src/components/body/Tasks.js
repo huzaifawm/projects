@@ -8,7 +8,6 @@ class Tasks extends Component {
   }
 
   render() {
-    console.log(this.props.user)
     return (
       <div className="tasks">
         {this.props.user.tasks.map((task) => {
